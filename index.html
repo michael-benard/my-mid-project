@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <section id="header" style="height: 100vh; background-color: #837f9d; margin-bottom: 70px;">
+            <div class="row" id="row">
+                <div class="col-5 col-md-2 order-1 mt-2 mt-md-0 d-flex justify-content-start">
+                   <img src="/img/image copy 7.png" alt="" style="height: 80px;width: 80px;">
+                </div>
+                <div class="col-3 col-md-7 d-flex align-items-center justify-content-end justify-content-md-end mb-2 mb-md-0 order-3 order-md-2 text-end text-md-start">
+                    <input type="checkbox" id="check" class="d-none">
+                    <label for="check" class="checkbtn">
+                        <span><i class="bi bi-list d-block d-md-none" style="font-size: 37px; color: #ffff;"></i></span>
+                        <span><i class="bi bi-x-lg d-md-none"></i></span>
+                    </label>
+                    <ul class="d-block d-md-flex">
+                        <li><a href="" id="active">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SPONSOR</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">VOLUNTEER</a></li>
+                    </ul>
+                </div>
+                <div class="mt-1 mt-md-0 col-4 col-md-3 d-flex align-items-center justify-content-start justify-content-md-end center  order-2" style="gap: 50px;">
+                    <span><a href="" style="text-decoration: none; color: inherit;"><i class="bi bi-search text-light" style="font-weight: bolder;"></i></a></span>
+                    <button class="d-none d-md-flex">
+                        <a href="" id="completed" style="text-decoration: none;"></a>
+                    </button>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center" id="rows">
+                <div class="col-12 text-center" style="margin-top: -15px;" id="right">
+                    <h6 style="letter-spacing: 7px; font-weight:bolder; font-family: myfont; color: #ffff;">ANTICIPATE</h6>
+                </div>
+                <div class="col-12 text-center">
+                    <h1>SMFest</h1>
+                </div>
+                <div class="col-12 text-center" style="margin-top: -30px;">
+                    <h1 id="locate">Owerri 2024</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <P>Theme:Evolve | 19th October, 2024 | Landmark Event Center, Owerri</P>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-2 mt-md-4" id="btn">
+                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                    <div class="btn d-flex"><a href="">BUY TICKET</a></div>
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-2 mt-md-0 justify-content-md-start">
+                   <div id="sponsor">
+                        <a href="">
+                            <span id="span"><i class="bi bi-play-fill"></i></span>
+                            <span>SPONSOR</span>
+                        </a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section id="main" style="background-color: #08003c;">
+            <div class="row  align-items-center justify-content-center px-0 mt-2 mx-md-5 me-md-5">
+                <div class="col-12 col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <div id="counting"> 
+                      <h1>5,332</h1>
+                      <p>Attendees</p>
+                   </div>
+                </div>
+                <div class="col-12 col-md-3  mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                    <div id="counting"> 
+                      <h1>150</h1>
+                      <p>Small businessed</p>
+                   </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                    <div id="counting"> 
+                      <h1>2</h1>
+                      <p>Cities</p>
+                   </div>
+                </div>
+                <div class="col-12 col-md-3  d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div id="counting" style="position: relative;"> 
+                      <h1 class="plus">500<span><i class="bi bi-plus"></i></span></h1>
+                      <p>volunteers</p>
+                   </div>
+                </div>
+            </div>
+            <div class="row" id="light">
+                <div class="order-2 col-12 col-md-6" id="write-up">
+                    <h6>ABOUT SMFEST</h6>
+                    <h3>SMFest?</h3>
+                    <p>
+                        It is a platform that teaches its audience how to leverage the power of technology, social media, and innovation to advance their businesses, brands, and causes, by providing ideas, exposure, and insights that help people and businesses understand how to explore all the advantages of digitalization. <br><br>
+                        In this 2024 edition, business owners, marketers,  and idea boomers will learn how to unlock the full promise of digital opportunity to drive the future of the industry, bring narrative and customer engagement to new realms, and scale business/idea results.
+                    </p>
+                    <div class="button">
+                        <a href="" id="read"></a>
+                    </div>
+                </div>
+                <div class=" order-1 order-md-2 col-md-6 d-flex justify-content-center animate__animated animate__fadeInRight" style="position: relative;" id="center">
+                    <img src="/img/image copy 6.png" alt="">
+                    <div id="celebration"></div>
+                    <div class="Excellence">
+                        <h1>4<i>TH</i></h1>
+                        <p>Years Of Excellence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="reward">
+                <div class="col-12 col-md-6 animate__animated animate__fadeInLeft "style="position: relative;">
+                    <img  src="img/image copy 5.png" alt="">
+                    <div class="award"></div>
+                    <div class="price">
+                        <h1>50<i class="bi bi-plus"></i></h1>
+                        <p>Global Sponsors</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" id="sections">
+                    <h6>WHY CHOOSE US</h6>
+                    <h1>Become a Sponsor</h1>
+                    <p>Gain unparalleled exposure to industry leaders and influencers. Elevate your brand by sponsoring an event that shapes the future of social media.</p>
+                    <div class="row justify-content-center justify-content-md-end" id="services">
+                        <div class="col-12 col-md-6 d-flex animate__animated animate__fadeInRight">
+                            <div><i class="bi bi-people"></i></div>
+                           <div>
+                              <h2>Attendee Activation</h2>
+           
+                              <p>Engage over 1500 persons with the sponsors time on stage</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex animate__animated animate__fadeInRight animate__slower 9s">
+                            <div><i class="bi bi-shop"></i></div>
+                           <div>
+                              <h2>Exhibition Stand</h2>
+                              <p>Have a decorated booth for your brand where activations can permanently happen</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex animate__animated animate__fadeInRight animate__slower 10s" style="position: relative;">
+                            <div><i class="bi bi-person-plus"></i></div>
+                           <div>
+                              <h2>Panel Session Spot</h2>
+                              <p>Share insight into your product and service in a conversation with other influencers</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex animate__animated animate__fadeInRight animate__slower 11s">
+                            <div><i class="bi bi-person-fill-check"></i></div>
+                           <div>
+                              <h2>Volunteers Activation</h2>
+                              <p>Engage over 200 volunteers to perform your tasks so that your goals can be met.</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <a href="" id="support"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="lights">
+                <div class="order-2 col-12 col-md-6" id="write">
+                    <h6> JOIN SMFEST VOLUNTEER</h6>
+                    <h3>Volunteer for SMFest</h3>
+                    <p>
+                        Simply fill out the volunteer application form on our website. We welcome individuals with a passion for technology, a positive attitude, and a willingness to learn and contribute. No prior experience is required—just bring your enthusiasm and dedication to the table!
+                        <br><br>
+                        Join us and be a part of an event that will inspire, educate, and shape the future of technology. Together, let’s make this an unforgettable experience for all attendees.
+                    </p>
+                    <div class="button">
+                        <a href="" id="read"></a>
+                    </div>
+                </div>
+                <div class=" order-1 order-md-2 col-md-6 d-flex justify-content-center " style="position: relative;" id="right">
+                    <img class="animate__animated animate__fadeInRight animate__slower 4s" src="/img/image copy 4.png" alt="">
+                    <div class="animate__animated animate__fadeInRight animate__slower 5s" id="celebration"></div>
+                    <div class="Excel animate__animated animate__fadeInRight animate__slower 6s">
+                        <h1>200</h1>
+                        <p>Volunteers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 exhibit d-flex align-items-center">
+                    <h1>Exhibit at SMfest</h1>
+                </div>
+                <div class="col-12 col-md-6 text-end d-flex align-items-center justify-content-end">
+                    <span><i class="bi bi-arrow-right d-none d-md-block"></i></span>
+                </div>
+            </div>
+            
+            <div id="carouselExampleAutoplaying" class="carousel slide px-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                    <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM.jpeg" alt="" class="d-block w-100" >
+                                            </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                        <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (1).jpeg" alt="" class="d-block w-100">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (1).jpeg" alt="" class="d-block w-100">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                    <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (2).jpeg" alt="" class="d-block w-100">
+                                            </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (2).jpeg" alt="" class="d-block w-100">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                    <a href="">
+                                            <div>
+                                                <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (3).jpeg" alt="" class="d-block w-100" >
+                                            </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                    <a href="">
+                                        <div>
+                                            <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (2).jpeg" alt="" class="d-block w-100" >
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 d-none d-md-block">
+                                        <div>
+                                        <a href="">
+                                            <img src="img/WhatsApp Image 2024-08-15 at 4.51.02 PM (3).jpeg" alt="" class="d-block w-100">
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+           </div>
+           <div class="row px-2" id="speaker">
+                <div class="col-12 d-block d-md-none" id="show">
+                    <p>
+                        Get the opportunity of showcasing your products and services at Smfest in a unique way. We have a customized space for you at SMFEST where you can get up with your activations and brand promotion.
+                    </p>
+                    <button class="wraps">
+                        <a href="" class="get" style="text-decoration: none;"></a>
+                    </button>
+                </div>
+                <div class="col-12">
+                    <h6>
+                        SOME SMFEST SPEAKERS
+                    </h6>
+                    <h2>
+                        Previous Speakers
+                    </h2>
+                    <p id="smfest">
+                        The SMFest stage has hosted over 40 Keynote speakers, panelist, workshop Experts,  and FireSide Chat facilitators. Here <br class="d-none d-md-block"> are some of the speakers from 2021 to 2024. From Owerri stage to Awka Nigeria, we only bring you the best.
+                    </p>
+                </div>
+           </div>
+           <div id="carouselExampleAutoplaying" class="carousel slide carousel-2 px-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="image">
+                        <a href=""> 
+                            <img src="/img/image copy 2.png" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item" id="image">
+                        <a href="">
+                            <img src="/img/image copy.png" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item" id="image">
+                        <a href="">
+                            <img src="/img/image copy.png" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="row px-2" id="speakee">
+                <div class="col-12">
+                    <h6>
+                        TICKET CATEGORIES
+                    </h6>
+                    <h2>
+                        Get your Ticket
+                    </h2>
+                    <p id="fest">
+                        At this moment the ticket will be sold at 25% discount for all category, Please, secure your tickets now before the <br class="d-none d-md-block"> offer ends. Offer Ends August 1st
+                    </p>
+                </div>
+           </div>
+           <div class="row" id="benefits">
+                <div class="col-12 col-md-4">
+                    <div class="basic-budget text-center" style="color: white;">
+                       <h2>BASIC</h2>
+                       <del>#15,000</del>
+                        <h4>10,000</h4>
+                        <p><i class="bi bi-check-lg">certificate</i></p>
+                        <p ><i class="bi bi-check-lg">Refreshment</i></p>
+                        <p><i class="bi bi-check-lg"></i>Jotter & Pen</p>
+                        <p><i class="bi bi-check-lg"></i>Newtworking Opportunity</p>
+                        <p><i class="bi bi-check-lg"></i>Access To Vendors</p>
+                        <p><i class="bi bi-x"></i>Informal Nibbles</p>
+                        <p><i class="bi bi-x"></i>Executive Notepad</p>
+                        <p><i class="bi bi-x"></i>Network Wit Speakers</p>
+                        <button><a href="">BUY TICKET</a></button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="basic-budget text-center" style="color: white;">
+                       <h2>EXECUTIVE</h2>
+                       <del>#30000</del>
+                        <h4>20,000</h4>
+                        <p><i class="bi bi-check-lg">Access to Event</i></p>
+                        <p ><i class="bi bi-check-lg">Refreshment</i></p>
+                        <p><i class="bi bi-check-lg"></i>Jotter & Pen</p>
+                        <p><i class="bi bi-check-lg"></i>Newtworking Opportunity</p>
+                        <p><i class="bi bi-check-lg"></i>Access To Vendors</p>
+                        <p><i class="bi bi-check-lg"></i>Certificate</p>
+                        <p><i class="bi bi-check-lg"></i>Front Row Seating Position</p>
+                        <p><i class="bi bi-x"></i>Executive Services</p>
+                        <p><i class="bi bi-check-lg"></i>Informal Nibbles</p>
+                        <button><a href="">BUY TICKET</a></button>
+                    </div>
+                </div>  <div class="col-12 col-md-4">
+                    <div class="basic-budget text-center" style="color: white;">
+                       <h2>PREMIUM</h2>
+                       <del>#100000</del>
+                        <h4>70,000</h4>
+                        <p><i class="bi bi-check-lg">Access to Executive MasterClass</i></p>
+                        <p ><i class="bi bi-check-lg">Refreshment Plus</i></p>
+                        <p><i class="bi bi-check-lg"></i>IEC Materials</p>
+                        <p><i class="bi bi-check-lg"></i>Executive Service</p>
+                        <p><i class="bi bi-check-lg"></i>Informal Nibbles</p>
+                        <p><i class="bi bi-check-lg"></i>Access to Event</p>
+                        <p><i class="bi bi-check-lg"></i>Front Row Seating Position</p>
+                        <p><i class="bi bi-check-lg"></i>Executive Refreshment</p>
+                        <p><i class="bi bi-check-lg"></i>Certificate</p>
+                        <button><a href="">BUY TICKET</a></button>
+                    </div>
+                </div>
+           </div>
+        </section>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
