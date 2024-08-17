@@ -12,7 +12,7 @@
     overflow-x: hidden;
 }
 body{
-    height: 900vh;
+    height: 50vh;
     background-color: #08003c;
 }
 section #header{
@@ -27,6 +27,11 @@ section #header{
     background-size: cover;
     overflow: hidden;
     filter: brightness(99%);
+}
+#main{
+    max-width:1890px;
+    margin: auto;
+    flex-wrap: inherit;
 }
 
 @keyframes change{
@@ -164,474 +169,6 @@ section #header{
     justify-content: start;
     gap: 30px;
 }
-@media (max-width:700px) {
-    #header .row{
-        justify-content: center;
-        align-items: center;
-        padding-top: 15px;
-        padding-right: 45px;
-        padding-left: 10px;
-    }
-    #header #row{
-        justify-content: center;
-        align-items: center;
-        padding-top: 8px;
-        padding-right: 40px;
-        padding-left: 10px;
-    }
-    .container-fluid{
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
-    #rows h1{
-        color:#ffff;
-        font-family:fonts;
-        font-weight: 900;
-        font-size:70px;
-        margin-bottom:5px;
-        margin-left: 20px;
-        margin-top:-6px;
-        line-height: 100px;
-    }
-    #rows{
-       margin-top: 30px;       
-    }
-    #rows p{
-        color: #ffff;
-        padding-left: 7.5px;
-    }
-    #sponsor #span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50px;
-        font-size: larger;
-        border: 1px solid #1c0a3b;
-    }
-    #counting{
-        display: block;
-        border: 2px solid #ffff;
-        width: 280px;
-        text-align: center;
-        align-items: center;
-        padding-top: 40px;
-        height: 140px;
-    }
-    label span .bi-list,
-    label span .bi-x-lg{
-    color: white;
-    font-size: 30px;
-    display: none;
-}
-.plus span .bi-plus{
-    position: absolute;
-    top:40px;
-    right: 93px;
-    color: #ffff;
-    font-size: medium;
-}
-div #light{
-    margin-top: 130px;
-    margin-bottom: 50px;
-}
-#header div ul{
-    width: 100%;
-    position: fixed;
-    height: 30vh;
-    top: -160%;
-    left: 0;
-    margin: 90px 0;
-    background: linear-gradient(#fa4a3b ,#e9335f);
-    top: 80px;
-    text-align: start;
-    transition: all 1s;
-}
-#header ul li a#active{
-    color:inherit;
-}
-#header ul li{
-    margin: 20px 0;
-    font-size: small;
-    line-height: 20px;
-    padding-left: 20px;
-}
-#check:checked ~ ul{
-    top: -400px;
-}
-#check:checked ~ span .bi-list{
-    display: none;
-}
-#check:checked ~ span .bi-x-lg{
-    display: block;
-}
-div #write-up{
-    padding:0 35px;
-    margin-top: -450px;
-}
-div #write-up h6{
-    margin-bottom: 30px;
-    font-size: 14px;
-    letter-spacing: 8px;
-    color: #da2b58;
-}
-div #write-up h3{
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-family: fonts;
-    color: #ffff;
-}
-div #write-up p{
-    margin-bottom: 30px;
-    font-size: 14.3px;
-    line-height: 23px;
-    font-family: fonts;
-    color: #ffff;
-}
-div.button a#read::after,a#read::before{
-    content: "READ MORE";
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    line-height: 5px;
-    left: 30px;
-    width: 100%;
-    text-transform: capitalize;
-}   
-   div #celebration{
-    position: absolute;
-    border: 4px solid #da2b58;
-    right:36px;
-    top: 0;
-    border-radius: 15px;
-    height:40%;
-    width: 80%;
-    z-index: 100;
-}
-div .Excellence{
-    position: absolute;
-    z-index: 300;
-    right: 25px;
-    bottom: 500px;
-    border: 1px solid #ffff;
-    padding: 3px 10px;
-    height:12%;
-    width: 60%;
-    color: white;
-    background-color: #101010;
-}
-div .Excellence h1{
-    font-size: 40px;
-    position: relative;
-    padding-left: 70px;
-    font-family: fonts;
-}
-div .Excellence h1 i{
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    font-family: myfonts;
-    color: #da2b58;
-}
-div .Excellence p{
-    font-size:larger;
-    padding-left: 7px;
-    font-family: fonts;
-}
-#center{
-    display:block;
-}
-div #center img{
-    position: relative;
-    height: 37%;
-    left: -10px;
-    top: 20px;
-    z-index: 200;
-   transition: all 400ms;
-}
-#reward{
-    margin-top: 200px;
-}
-div #reward img{
-    position: relative;
-    height:45%;
-    left:20px;
-    top: 20px;
-    z-index: 200;
-}
-div .award{
-    position: absolute;
-    border: 4px solid #da2b58;
-    right:36px;
-    top: 0;
-    border-radius: 15px;
-    height:45%;
-    width: 65%;
-    z-index: 100;
-}
-div .price{
-    position: absolute;
-    z-index: 300;
-    left: 30px;
-    top: -60px;
-    border: 2px solid #ffff;
-    padding-top:10px;
-    padding-left: 15px;
-    height:120px;
-    width: 50%;
-    color: white;
-    background-color:#e9335f;
-}
-div .price h1{
-    font-size: 40px;
-    position: relative;
-    padding-left: 40px;
-    font-family: fonts;
-}
-div .price h1 i{
-    font-size: 40px;
-    position: absolute;
-    right: 33px;
-    color:#ffff;
-    font-family: myfonts;
-}
-.price p{
-    font-size:large;
-    padding-left: 0;
-    white-space: nowrap;
-    font-family: fonts;
-}
-div #sections{
-    margin-top: -530px;
-    padding-left: 40px;
-    padding-top: 40px;
-}
-div #sections h6{
-    font-family: fonts;
-    color:#c03e7d;
-    letter-spacing: 8px;
-    font-size: small;
-}
-div #sections h1{
-    font-family: fonts;
-    margin-bottom: 25px;
-    color:#ffff;
-    word-spacing: 5px;
-    font-size: 35px;
-}
-div #sections p{
-    font-family: fonts;
-    color:#ffff;
-    margin-bottom: 40px;
-    font-size: 15px;
-    padding-right: 5px;
-}
-div #services div i{
-    font-size: 40px;
-    color: #ffff;
-    margin-right: 10px;
-}
-
-div #services div h2{
-    font-size: 19 px;
-    font-family: fonts;
-    color: #ffff;
-    margin-right: 10px;
-}
-div .wrapper{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    overflow: hidden;
-    margin-top: 15px;
-    position: relative;
-    background-color: transparent;
-    border: 2px  solid white;
-}
-
-div #write{
-    padding:0 35px;
-    margin-top: -450px;
-}
-div #write h6{
-    margin-bottom: 10px;
-    font-size: 14px;
-    white-space: nowrap;
-    color: #da2b58;
-}
-div #write h3{
-    margin-bottom: 10px;
-    font-size: 60px;
-    line-height: 65px;
-    font-family: fonts;
-    color: #ffff;
-}
-div #write p{
-    font-size: 14.5px;
-    padding-right: 7px;
-    font-weight: lighter;
-    margin-bottom: -10px;
-    line-height: 23px;
-    font-family: fonts;
-    color: #ffff;
-}
-div.button a#read::after,a#read::before{
-    content: "VOLUNTEER";
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    line-height: 5px;
-    left: 30px;
-    width: 100%;
-    text-transform: capitalize;
-}   
-   div #celebration{
-    position: absolute;
-    border: 4px solid #da2b58;
-    right:36px;
-    top: 0;
-    border-radius: 15px;
-    height:40%;
-    width: 80%;
-    z-index: 100;
-}
-div .Excel{
-    position: absolute;
-    z-index: 300;
-    right: 0;
-    bottom: 500px;
-    border: 1px solid #ffff;
-    padding: 3px 10px;
-    height:12%;
-    width: 60%;
-    color: white;
-    background-color: #101010;
-}
-div .Excel h1{
-    font-size: 40px;
-    position: relative;
-    padding-left: 70px;
-    font-family: fonts;
-}
-
-div .Excel p{
-    font-size:larger;
-    padding-left: 60px;
-    font-family: fonts;
-}
-#right{
-    display:block;
-}
-div #right img{
-    position: relative;
-    height: 37%;
-    left: -10px;
-    top: 20px;
-    z-index: 200;
-   transition: all 400ms;
-}
-div .exhibit h1{
-    color: #ffff;
-    line-height: 60px;
-    font-size: 65px;
-    margin-bottom: 60px;
-    padding-left: 10px;
-    font-family:fonts;
-}
-.carousel-item .row img{
-    height: 40vh;
-}
-div#speakee h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:40px;
-    font-family: fonts;
-   color: #ffff;
-}
-div#show{
-    margin-top: -120px;
-}
-div#show p{
-    text-align: start;
-    font-size: medium;
-}
-div#show button{
-    margin-top:20px;
-}
-
-
-button.wraps{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 190px;
-    overflow: hidden;
-    position: relative;
-    margin-top: 80px;
-    margin-bottom: 120px;
-    background-color: transparent;
-    border: 2px  solid white;
-}
-
-.wraps a.get::after,a.get::before{
-    content: "get now";
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    color: #ffff;
-    line-height: 6px;
-    left: -40px;
-    width: 100%;
-    white-space: nowrap;
-    text-transform:uppercase;
-    transition: all 400ms;
-}
-.wraps a.get::before{
-    content: "get now";
-    left: 190px;
-}
-.wraps a.get:hover:after{
-    left:-280px;
-}
-.wraps a.get:hover::before{
-    left: 40px;
-    background: linear-gradient(#d73751, #c03e7d);
-    padding: 90px;
-}
-div#speaker p#smfest{
-    display: flex;
-    align-items: center;
-    justify-content:start;
-    font-size:15px;
-    font-family: font;
-    text-align: center;
-    color: #ffff;
-}
-div#image img{
-    height: 40vh;
-}
-div.carousel-2{
-    margin-top: 30px;
-}
-div#speakee p#fest{
-    display: flex;
-    align-items: center;
-    justify-content:start;
-    font-size:15px;
-    font-family: font;
-    text-align: center;
-    color: #ffff;
-}
-
-}
 .plus .bi-plus{
     position: absolute;
     top:60px;
@@ -696,6 +233,12 @@ button{
     justify-content: center;
     background-color: #fb4c37;
 }
+#main{
+    max-width:1890px;
+    margin: auto;
+    flex-wrap: inherit;
+}
+
 #light{
     margin-top: 220px;
     margin-bottom: 120px;
@@ -1210,10 +753,9 @@ div.carousel-item .row a:hover{
     border-radius: 20px;
     padding: 30px;
     margin-top: 30px;
-    max-height: 30px;
+    height: 30px;
     background-color: transparent;
     border: 1px solid white;
-    transition: max-height 0.5s ease;
 }
 #benefits p{
     margin: -10px;
@@ -1227,6 +769,7 @@ div.carousel-item .row a:hover{
 }
 #benefits div#ticket{
     border: 2px solid #d73751;
+    padding-top: 10px;
     background-color:transparent;
 }
 #benefits div.basic-budget:hover{
@@ -1257,13 +800,15 @@ div.carousel-item .row a:hover{
     background-image: url(/img/WhatsApp\ Image\ 2024-08-12\ at\ 4.41.31\ PM.jpeg);
     background-size: cover;
     overflow: hidden;
-    filter: brightness(70%);
-    padding-top: 70px;
-    height: 90vh;
+    padding-top: 50px;
+    height: 40vh;
+    max-width:1890px;
+    margin: auto;
+    margin-top: 60px;
+    z-index: 100;
 }
 #footer img{
     height: 170px;
-    padding: 0;
 }
 .contact {
     padding-left: 23px;
@@ -1285,7 +830,14 @@ div.carousel-item .row a:hover{
     width: 35px;
     margin-top: 20px;
     border: 1px solid #ffff;
+    transition: 0.3s;
    
+}
+.contact span:hover{
+    background-color: #e9335f;
+    color: #ffff;
+    border: none;
+    font-weight: bold;
 }
 .about h3{
     color: #ffff;
@@ -1293,13 +845,26 @@ div.carousel-item .row a:hover{
     font-weight: bold;
     margin-bottom: 23px;
 }
+.about ul{
+    display: block;
+}
 .about ul li{
+    display: flex;
+    align-self: center;
+    justify-content: center;
     list-style: none;
-    padding: 5px;
+    padding: 3px;
+    text-align: center;
+    font-size: larger;
 }
 .about ul li a{
     text-decoration: none;
     color: #ffff;
+    width: 100%;
+}
+.about ul li a:hover{
+    text-decoration: none;
+    color:red;
 }
 .new h6{
     color: #ffff;
@@ -1331,4 +896,474 @@ input{
     text-decoration: none;
     color: #ffff;
     font-family: myfont;
+}
+
+
+@media (max-width:700px) {
+    #header .row{
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-right: 45px;
+        padding-left: 10px;
+    }
+    #header #row{
+        justify-content: center;
+        align-items: center;
+        padding-top: 8px;
+        padding-right: 40px;
+        padding-left: 10px;
+    }
+    .container-fluid{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #rows h1{
+        color:#ffff;
+        font-family:fonts;
+        font-weight: 900;
+        font-size:70px;
+        margin-bottom:5px;
+        margin-left: 20px;
+        margin-top:-6px;
+        line-height: 100px;
+    }
+    #rows{
+       margin-top: 30px;       
+    }
+    #rows p{
+        color: #ffff;
+        padding-left: 7.5px;
+    }
+    #sponsor #span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        font-size: larger;
+        border: 1px solid #1c0a3b;
+    }
+    #counting{
+        display: block;
+        border: 2px solid #ffff;
+        width: 280px;
+        text-align: center;
+        align-items: center;
+        padding-top: 40px;
+        height: 140px;
+    }
+    label span .bi-list,
+    label span .bi-x-lg{
+    color: white;
+    font-size: 30px;
+    display: none;
+}
+.plus span .bi-plus{
+    position: absolute;
+    top:40px;
+    right: 93px;
+    color: #ffff;
+    font-size: medium;
+}
+div #light{
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+#header div ul{
+    width: 100%;
+    position: fixed;
+    height: 30vh;
+    top: -160%;
+    left: 0;
+    margin: 90px 0;
+    background: linear-gradient(#fa4a3b ,#e9335f);
+    top: 80px;
+    text-align: start;
+    transition: all 1s;
+}
+#header ul li a#active{
+    color:inherit;
+}
+#header ul li{
+    margin: 20px 0;
+    font-size: small;
+    line-height: 20px;
+    padding-left: 20px;
+}
+#check:checked ~ ul{
+    top: -400px;
+}
+#check:checked ~ span .bi-list{
+    display: none;
+}
+#check:checked ~ span .bi-x-lg{
+    display: block;
+}
+div #write-up{
+    padding:0 35px;
+    margin-top: -450px;
+}
+div #write-up h6{
+    margin-bottom: 30px;
+    font-size: 14px;
+    letter-spacing: 8px;
+    color: #da2b58;
+}
+div #write-up h3{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: fonts;
+    color: #ffff;
+}
+div #write-up p{
+    margin-bottom: 30px;
+    font-size: 14.3px;
+    line-height: 23px;
+    font-family: fonts;
+    color: #ffff;
+}
+div.button a#read::after,a#read::before{
+    content: "READ MORE";
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    line-height: 5px;
+    left: 30px;
+    width: 100%;
+    text-transform: capitalize;
+}   
+   div #celebration{
+    position: absolute;
+    border: 4px solid #da2b58;
+    right:36px;
+    top: 0;
+    border-radius: 15px;
+    height:40%;
+    width: 80%;
+    z-index: 100;
+}
+div .Excellence{
+    position: absolute;
+    z-index: 300;
+    right: 25px;
+    bottom: 500px;
+    border: 1px solid #ffff;
+    padding: 3px 10px;
+    height:12%;
+    width: 60%;
+    color: white;
+    background-color: #101010;
+}
+div .Excellence h1{
+    font-size: 40px;
+    position: relative;
+    padding-left: 70px;
+    font-family: fonts;
+}
+div .Excellence h1 i{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    font-family: myfonts;
+    color: #da2b58;
+}
+div .Excellence p{
+    font-size:larger;
+    padding-left: 7px;
+    font-family: fonts;
+}
+#center{
+    display:block;
+}
+div #center img{
+    position: relative;
+    height: 37%;
+    left: -10px;
+    top: 20px;
+    z-index: 200;
+   transition: all 400ms;
+}
+#reward{
+    margin-top: 200px;
+}
+div #reward img{
+    position: relative;
+    height:45%;
+    left:20px;
+    top: 20px;
+    z-index: 200;
+}
+div .award{
+    position: absolute;
+    border: 4px solid #da2b58;
+    right:36px;
+    top: 0;
+    border-radius: 15px;
+    height:45%;
+    width: 65%;
+    z-index: 100;
+}
+div .price{
+    position: absolute;
+    z-index: 300;
+    left: 30px;
+    top: -60px;
+    border: 2px solid #ffff;
+    padding-top:10px;
+    padding-left: 15px;
+    height:120px;
+    width: 50%;
+    color: white;
+    background-color:#e9335f;
+}
+div .price h1{
+    font-size: 40px;
+    position: relative;
+    padding-left: 40px;
+    font-family: fonts;
+}
+div .price h1 i{
+    font-size: 40px;
+    position: absolute;
+    right: 33px;
+    color:#ffff;
+    font-family: myfonts;
+}
+.price p{
+    font-size:large;
+    padding-left: 0;
+    white-space: nowrap;
+    font-family: fonts;
+}
+div #sections{
+    margin-top: -530px;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+div #sections h6{
+    font-family: fonts;
+    color:#c03e7d;
+    letter-spacing: 8px;
+    font-size: small;
+}
+div #sections h1{
+    font-family: fonts;
+    margin-bottom: 25px;
+    color:#ffff;
+    word-spacing: 5px;
+    font-size: 35px;
+}
+div #sections p{
+    font-family: fonts;
+    color:#ffff;
+    margin-bottom: 40px;
+    font-size: 15px;
+    padding-right: 5px;
+}
+div #services div i{
+    font-size: 40px;
+    color: #ffff;
+    margin-right: 10px;
+}
+
+div #services div h2{
+    font-size: 19 px;
+    font-family: fonts;
+    color: #ffff;
+    margin-right: 10px;
+}
+div .wrapper{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    overflow: hidden;
+    margin-top: 15px;
+    position: relative;
+    background-color: transparent;
+    border: 2px  solid white;
+}
+
+div #write{
+    padding:0 35px;
+    margin-top: -450px;
+}
+div #write h6{
+    margin-bottom: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    color: #da2b58;
+}
+div #write h3{
+    margin-bottom: 10px;
+    font-size: 60px;
+    line-height: 65px;
+    font-family: fonts;
+    color: #ffff;
+}
+div #write p{
+    font-size: 14.5px;
+    padding-right: 7px;
+    font-weight: lighter;
+    margin-bottom: -10px;
+    line-height: 23px;
+    font-family: fonts;
+    color: #ffff;
+}
+div.button a#read::after,a#read::before{
+    content: "VOLUNTEER";
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    line-height: 5px;
+    left: 30px;
+    width: 100%;
+    text-transform: capitalize;
+}   
+   div #celebration{
+    position: absolute;
+    border: 4px solid #da2b58;
+    right:36px;
+    top: 0;
+    border-radius: 15px;
+    height:40%;
+    width: 80%;
+    z-index: 100;
+}
+div .Excel{
+    position: absolute;
+    z-index: 300;
+    right: 0;
+    bottom: 500px;
+    border: 1px solid #ffff;
+    padding: 3px 10px;
+    height:12%;
+    width: 60%;
+    color: white;
+    background-color: #101010;
+}
+div .Excel h1{
+    font-size: 40px;
+    position: relative;
+    padding-left: 70px;
+    font-family: fonts;
+}
+
+div .Excel p{
+    font-size:larger;
+    padding-left: 60px;
+    font-family: fonts;
+}
+#right{
+    display:block;
+}
+div #right img{
+    position: relative;
+    height: 37%;
+    left: -10px;
+    top: 20px;
+    z-index: 200;
+   transition: all 400ms;
+}
+div .exhibit h1{
+    color: #ffff;
+    line-height: 60px;
+    font-size: 65px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+    font-family:fonts;
+}
+.carousel-item .row img{
+    height: 40vh;
+}
+div#speakee h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:40px;
+    font-family: fonts;
+   color: #ffff;
+}
+div#show{
+    margin-top: -120px;
+}
+div#show p{
+    text-align: start;
+    font-size: medium;
+}
+div#show button{
+    margin-top:20px;
+}
+
+
+button.wraps{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    background-color: transparent;
+    border: 2px  solid white;
+}
+
+.wraps a.get::after,a.get::before{
+    content: "get now";
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    line-height: 6px;
+    left: -40px;
+    width: 100%;
+    white-space: nowrap;
+    text-transform:uppercase;
+    transition: all 400ms;
+}
+.wraps a.get::before{
+    content: "get now";
+    left: 190px;
+}
+.wraps a.get:hover:after{
+    left:-280px;
+}
+.wraps a.get:hover::before{
+    left: 40px;
+    background: linear-gradient(#d73751, #c03e7d);
+    padding: 90px;
+}
+div#speaker p#smfest{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    font-size:15px;
+    font-family: font;
+    text-align: center;
+    color: #ffff;
+}
+div#image img{
+    height: 40vh;
+}
+div.carousel-2{
+    margin-top: 30px;
+}
+div#speakee p#fest{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    font-size:15px;
+    font-family: font;
+    text-align: center;
+    color: #ffff;
+}
+
 }
